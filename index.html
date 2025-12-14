@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhenixMax - Next Generation Esports</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9005560192791937"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">PHENIX<span>MAX</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tournaments">Tournaments</a></li>
+                    <li><a href="#instructions">Instructions</a></li>
+                    <li><a href="#sponsor">Sponsors</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>THE FUTURE OF ESPORTS IS HERE</h1>
+                <p>Experience next-generation competitive gaming with cutting-edge tournaments, futuristic interfaces, and unparalleled competition. Join the evolution.</p>
+                <div class="hero-btns">
+                    <a href="#tournaments" class="btn btn-primary">View Tournaments</a>
+                    <a href="#instructions" class="btn">Tournament Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="tournaments" class="section tournaments">
+        <div class="container">
+            <h2 class="section-title">TOURNAMENTS</h2>
+            <div class="tournament-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+            </div>
+            <div class="tournament-grid">
+                <!-- Ongoing Tournament -->
+                <div class="tournament-card" data-status="ongoing">
+                    <div class="tournament-header">
+                        <span class="tournament-status status-ongoing">Ongoing</span>
+                        <h3 class="tournament-title">Free Fire MAX Battle Royale</h3>
+                        <div class="tournament-game">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Free Fire MAX</span>
+                        </div>
+                    </div>
+                    <div class="tournament-body">
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <div class="info-label">Format</div>
+                                <div class="info-value">Squad (4v4)</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Teams</div>
+                                <div class="info-value" id="teams-count">12/12</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Prize Pool</div>
+                                <div class="info-value prize-pool">₹7,000</div>
+                            </div>
+                        </div>
+                        <p>Battle it out in the ultimate Free Fire MAX tournament. Only the strongest squad will claim the prize!</p>
+                        
+                        <div class="tournament-details">
+                            <h4><i class="fas fa-calendar-alt"></i> Tournament Details</h4>
+                            <p><strong>Date:</strong> 17th October 2025</p>
+                            <p><strong>Check-in Time:</strong> 2:30 PM (Please arrive 30 minutes early)</p>
+                            <p><strong>Venue:</strong> Avantika Food Garden, 2nd Floor, Bazar Road, Jamatra</p>
+                            <p><strong>Entry Fee:</strong> 50/- per player which is equals to 200/- per team (Submit at venue)</p>
+                        </div>
+
+                        <!-- Registration Closed Notice -->
+                        <div class="registration-closed">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Registration Closed - All Slots Filled</span>
+                        </div>
+                    </div>
+                    <div class="tournament-footer">
+                        <button class="btn" disabled>Registration Closed</button>
+                        <div class="slots-full">
+                            <p>All 12 team slots have been filled. Stay tuned for our next tournament!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Tournaments -->
+                <div class="tournament-card" data-status="upcoming">
+                    <div class="tournament-header">
+                        <span class="tournament-status status-upcoming">Upcoming</span>
+                        <h3 class="tournament-title">Valorant Championship</h3>
+                        <div class="tournament-game">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Valorant</span>
+                        </div>
+                    </div>
+                    <div class="tournament-body">
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <div class="info-label">Format</div>
+                                <div class="info-value">Team (5v5)</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Teams</div>
+                                <div class="info-value">12</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Prize Pool</div>
+                                <div class="info-value prize-pool">₹10,000</div>
+                            </div>
+                        </div>
+                        <p>Test your tactical skills in this intense Valorant tournament. Registration opens soon!</p>
+                    </div>
+                    <div class="tournament-footer">
+                        <button class="btn" disabled>Coming Soon</button>
+                    </div>
+                </div>
+
+                <div class="tournament-card" data-status="upcoming">
+                    <div class="tournament-header">
+                        <span class="tournament-status status-upcoming">Upcoming</span>
+                        <h3 class="tournament-title">BGMI Clash</h3>
+                        <div class="tournament-game">
+                            <i class="fas fa-gamepad"></i>
+                            <span>BGMI</span>
+                        </div>
+                    </div>
+                    <div class="tournament-body">
+                        <div class="tournament-info">
+                            <div class="info-item">
+                                <div class="info-label">Format</div>
+                                <div class="info-value">Squad (4v4)</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Teams</div>
+                                <div class="info-value">12</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Prize Pool</div>
+                                <div class="info-value prize-pool">₹15,000</div>
+                            </div>
+                        </div>
+                        <p>The ultimate battle royale experience returns with our BGMI tournament. Get ready to fight for survival!</p>
+                    </div>
+                    <div class="tournament-footer">
+                        <button class="btn" disabled>Coming Soon</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section id="instructions" class="section instructions">
+        <div class="container">
+            <h2 class="section-title">TOURNAMENT INSTRUCTIONS</h2>
+            <div class="instructions-grid">
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Tournament Details</h3>
+                    <p>Important information about the tournament schedule and venue:</p>
+                    <ul class="instruction-list">
+                        <li><strong>Date:</strong> 17th October 2025</li>
+                        <li><strong>Check-in Time:</strong> 2:30 PM (Please arrive 30 minutes early)</li>
+                        <li><strong>Venue:</strong> Avantika Food Garden, 2nd Floor, Bazar Road, Jamatra</li>
+                        <li><strong>Entry Fee:</strong>50/- per player which is equals to 200/- per team (Submit at venue)</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>What to Bring</h3>
+                    <p>Essential items every participant must have:</p>
+                    <ul class="instruction-list">
+                        <li>Your mobile device with Free Fire MAX installed</li>
+                        <li>Device charger and power bank</li>
+                        <li>Headphones for better communication</li>
+                        <li>Valid ID proof for verification</li>
+                        <li>Entry fee of 50/- per player which is equals to 200/- per team (Submit at venue)</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Preparation</h3>
+                    <p>Get your game and device ready for the tournament:</p>
+                    <ul class="instruction-list">
+                        <li>Make sure your device is fully charged</li>
+                        <li>Update Free Fire MAX to the latest version</li>
+                        <li>Clear cache and close background apps</li>
+                        <li>Test your internet connection beforehand</li>
+                        <li>Have your game account ready and updated</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Requirements</h3>
+                    <p>Important guidelines for team participation:</p>
+                    <ul class="instruction-list">
+                        <li>Each team must have exactly 4 players</li>
+                        <li>All players must be present at the venue</li>
+                        <li>Team name should be appropriate and respectful</li>
+                        <li>One registration per player across all teams</li>
+                        <li>No player substitutions after registration</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Rules & Regulations</h3>
+                    <p>Tournament rules that all participants must follow:</p>
+                    <ul class="instruction-list">
+                        <li>Follow all instructions from tournament organizers</li>
+                        <li>Maintain sportsmanship throughout the event</li>
+                        <li>No abusive language or behavior</li>
+                        <li>Decisions by organizers are final</li>
+                        <li>Any disputes must be raised immediately</li>
+                    </ul>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Prize Distribution</h3>
+                    <p>Information about prizes and winners:</p>
+                    <ul class="instruction-list">
+                        <li>Prize money will be distributed to the winning team</li>
+                        <li>Distribution will happen after the final match</li>
+                        <li>All team members must be present to receive prizes</li>
+                        <li>Prizes are subject to applicable taxes</li>
+                        <li>Organizers reserve the right to modify prize structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <strong>WARNING:</strong> Any suspicious activity including using panels, hacks, or any unauthorized software will result in immediate disqualification and permanent ban from all future PhenixMax tournaments. Fair play is our top priority!
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsor" class="section sponsors">
+        <div class="container">
+            <h2 class="section-title">OUR SPONSORS</h2>
+            <div class="sponsor-logos">
+                <div class="sponsor-logo">
+                    <img src="jewellers.png" alt="Mihijam Jewellers">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="Avantika.png" alt="Avantika Fashions">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="khoobsurat.png" alt="Khoobsurat Cosmetics">
+                </div>
+                <div class="sponsor-logo">
+                    <img src="Balaji.png" alt="Balaji Electricals">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>We Are PhenixMax</h3>
+                    <p>PhenixMax represents the next evolution in competitive gaming. We've built a platform that merges cutting-edge technology with elite esports competition to create unforgettable experiences for players and fans alike.</p>
+                    <p>Our vision is to push the boundaries of what's possible in esports, leveraging advanced analytics, immersive broadcasts, and futuristic interfaces to deliver tournaments that feel like they're from the next decade.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Tournaments</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">5,000+</div>
+                            <div class="stat-label">Players</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">₹5L+</div>
+                            <div class="stat-label">Prize Money</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2084&q=80" alt="Esports Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Have questions about our tournaments or want to partner with us? Reach out using the form or contact details below.</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Jamtara Jharkhand</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>phenixmax1@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 8102247011</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://x.com/Phenixmax118460" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/phenixmax/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@phenixmax?si=0EjL2FCxHqXCDrfe" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formsubmit.co/phenixmax1@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Message - PhenixMax">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" class="form-control" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>PhenixMax</h3>
+                    <p>Your premier destination for competitive esports tournaments. Rise from the ashes and claim your victory.</p>
+                    <div class="footer-social-links">
+                        <a href="https://x.com/Phenixmax118460" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/phenixmax/" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@phenixmax?si=0EjL2FCxHqXCDrfe" class="footer-social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#tournaments">Tournaments</a></li>
+                        <li><a href="#instructions">Instructions</a></li>
+                        <li><a href="#sponsor">Sponsors</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Tournaments</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Free Fire MAX</a></li>
+                        <li><a href="#">Valorant</a></li>
+                        <li><a href="#">BGMI</a></li>
+                        <li><a href="#">Call of Duty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="terms and conditions\faq.html">FAQ</a></li>
+                        <li><a href="#">Rules & Guidelines</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 PhenixMax. All rights reserved. | The Future of Esports</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
